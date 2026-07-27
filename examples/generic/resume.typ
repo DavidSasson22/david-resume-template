@@ -23,7 +23,7 @@
       role: "Senior Program Manager",
       location: "Metro City",
       dates: "2022–Present",
-      context: "Leads strategic programs spanning Operations, Product, Finance, and Customer Success.",
+      description: "Leads strategic programs spanning Operations, Product, Finance, and Customer Success.",
       bullets: (
         [Redesigned the annual planning process across six departments, reducing planning-cycle time by 30% and giving executives a single view of priorities, owners, and dependencies.],
         [Established a portfolio health framework that surfaced delivery risks earlier and improved on-time completion from 74% to 91% within one year.],
@@ -35,7 +35,7 @@
       role: "Operations Manager",
       location: "Metro City",
       dates: "2017–2022",
-      context: none,
+      description: none,
       bullets: (
         [Managed a multi-site operating function serving more than 200 internal users while maintaining service levels during rapid organizational growth.],
         [Automated recurring reporting and introduced standard operating reviews, saving approximately 20 staff hours per month.],
@@ -47,7 +47,7 @@
       role: "Business Analyst",
       location: "Metro City",
       dates: "2013–2017",
-      context: none,
+      description: none,
       bullets: (
         [Built performance dashboards and decision models used by department leaders to prioritize investments and staffing.],
         [Mapped customer-support processes and identified changes that reduced avoidable escalations by 18%.],
