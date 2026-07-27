@@ -1,0 +1,17 @@
+name: Build example resume
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - run: typst compile example/resume.typ example/resume.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: example-resume
+          path: example/resume.pdf
