@@ -23,7 +23,7 @@
   )
   set text(font: body_font, size: 10.8pt, fill: rgb("181818"))
   set par(leading: 0.55em, justify: false)
-  set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.16em, marker: [•])
+  set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.34em, marker: [•])
 
   let section-heading(title) = {
     v(0.8em)
@@ -40,15 +40,23 @@
   }
 
   let dated-entry(entry) = {
-    grid(
-      columns: (1fr, auto),
-      column-gutter: 8pt,
-      align: (left, right),
-      [#strong(entry.organization)],
-      [#entry.dates],
-      [#strong(entry.title)#if entry.location != none { [ — #entry.location] }],
-      [],
-    )
+    block(width: 100%)[
+      #grid(
+        columns: (1fr, auto),
+        column-gutter: 8pt,
+        row-gutter: 0.44em,
+        align: (left, right),
+        [#strong(entry.organization)],
+        [#entry.dates],
+        [
+          #text(size: 10.2pt, weight: "medium", entry.title)
+          #if entry.location != none {
+            [ — #text(size: 9.8pt, fill: rgb("555555"), entry.location)]
+          }
+        ],
+        [],
+      )
+    ]
     if entry.description != none {
       v(0.12em)
       emph(entry.description)
@@ -60,15 +68,32 @@
     v(0.42em)
   }
 
+  let education-entry(entry) = {
+    block(width: 100%)[
+      #grid(
+        columns: (1fr, auto),
+        column-gutter: 8pt,
+        row-gutter: 0.38em,
+        [#strong(entry.institution)],
+        [#entry.dates],
+        [#text(weight: "medium", entry.credential)],
+        [],
+      )
+    ]
+    v(0.32em)
+  }
+
   let render-custom(section) = {
     section-heading(section.title)
     if section.kind == "bullets" {
       list(..section.items)
     } else if section.kind == "labeled" {
-      for item in section.items {
-        [#strong(item.label): #item.value]
-        linebreak()
-      }
+      grid(
+        columns: (1fr,),
+        row-gutter: 0.48em,
+        ..section.items.map(item => [#strong(item.label): #item.value]),
+      )
+      v(0.34em)
     } else if section.kind == "entries" {
       for item in section.items { dated-entry(item) }
     } else {
@@ -76,17 +101,27 @@
     }
   }
 
-  align(center)[
-    #text(size: 21pt, weight: "bold", name)
-    #if headline != none {
-      v(0.16em)
-      text(size: 11.2pt, weight: "medium", headline)
-    }
-    #v(0.22em)
-    #contact-line(contact)
-  ]
+  if headline != none {
+    align(center, grid(
+      columns: (auto,),
+      row-gutter: 0.52em,
+      align: center,
+      [#text(size: 21pt, weight: "bold", name)],
+      [#text(size: 11.2pt, weight: "medium", fill: rgb("333333"), headline)],
+      [#text(size: 9.8pt, fill: rgb("444444"), contact-line(contact))],
+    ))
+  } else {
+    align(center, grid(
+      columns: (auto,),
+      row-gutter: 0.52em,
+      align: center,
+      [#text(size: 21pt, weight: "bold", name)],
+      [#text(size: 9.8pt, fill: rgb("444444"), contact-line(contact))],
+    ))
+  }
 
   if summary != none {
+    v(0.30em)
     section-heading("Summary")
     summary
   }
@@ -114,17 +149,12 @@
   }
 
   if education.len() > 0 {
-    section-heading("Education")
-    for entry in education {
-      grid(
-        columns: (1fr, auto),
-        column-gutter: 8pt,
-        [#strong(entry.institution)],
-        [#entry.dates],
-        [#entry.credential],
-        [],
-      )
-      v(0.32em)
+    block(breakable: false)[
+      #section-heading("Education")
+      #education-entry(education.first())
+    ]
+    for entry in education.slice(1) {
+      education-entry(entry)
     }
   }
 
