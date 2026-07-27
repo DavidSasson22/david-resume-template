@@ -2,6 +2,7 @@
 // ATS-first, single-column Typst resume framework.
 
 #let resume(
+  body,
   name: "Your Name",
   headline: none,
   contact: (),
@@ -10,17 +11,17 @@
   experience: (),
   education: (),
   sections: (),
-  body-font: "Arial",
-  page-size: "a4",
+  body_font: "Arial",
+  page_size: "a4"
 ) = {
   set document(title: name, author: name)
   set page(
-    paper: page-size,
+    paper: page_size,
     margin: (x: 18mm, y: 16mm),
     header: none,
     footer: none,
   )
-  set text(font: body-font, size: 10.8pt, fill: rgb("181818"))
+  set text(font: body_font, size: 10.8pt, fill: rgb("181818"))
   set par(leading: 0.55em, justify: false)
   set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.16em, marker: [•])
 
@@ -34,7 +35,7 @@
 
   let contact-line(items) = {
     align(center)[
-      #items.filter(item => item != none and item != "").join([ #sym.dot.c #])
+      #items.filter(item => item != none and item != "").join([ #sym.dot.c ])
     ]
   }
 
