@@ -1,4 +1,4 @@
-name: Build example resume
+name: Build generic resume example
 
 on:
   push:
@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v4
-      - run: typst compile example/resume.typ example/resume.pdf
+      - run: typst compile examples/generic/resume.typ examples/generic/resume.pdf
       - uses: actions/upload-artifact@v4
         with:
-          name: example-resume
-          path: example/resume.pdf
+          name: generic-resume
+          path: examples/generic/resume.pdf
