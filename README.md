@@ -30,6 +30,8 @@ typst compile examples/generic/resume.typ examples/generic/resume.pdf
 
 Edit `examples/generic/resume.typ`. The reusable framework lives in `template/resume.typ`.
 
+> **Typst compatibility note:** `context` is a reserved Typst keyword and cannot be used as a dictionary field name. This framework uses `description` for optional role or entry context.
+
 ## Canonical example
 
 The repository contains one profession-neutral fictional example at [`examples/generic`](examples/generic). It demonstrates summaries, categorized skills, reverse-chronological experience, measurable bullets, education, certifications, projects, languages, and community work.
