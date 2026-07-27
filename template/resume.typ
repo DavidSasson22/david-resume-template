@@ -48,9 +48,9 @@
       [#strong(entry.title)#if entry.location != none { [ — #entry.location] }],
       [],
     )
-    if entry.context != none {
+    if entry.description != none {
       v(0.12em)
-      emph(entry.context)
+      emph(entry.description)
     }
     if entry.bullets.len() > 0 {
       v(0.15em)
@@ -106,7 +106,7 @@
         title: entry.role,
         location: entry.location,
         dates: entry.dates,
-        context: entry.context,
+        description: entry.description,
         bullets: entry.bullets,
       ))
     }
