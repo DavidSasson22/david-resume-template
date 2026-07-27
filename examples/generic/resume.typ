@@ -5,7 +5,7 @@
   headline: "Senior Operations & Program Leader",
   contact: (
     "Metro City, Country",
-    link("mailto:jordan.lee@example.com")[jordan.lee@example.com],
+    link("mailto:jordan.lee@example.com")[jordan.lee\@example.com],
     link("https://linkedin.com/in/jordanlee")[linkedin.com/in/jordanlee],
   ),
   summary: [
