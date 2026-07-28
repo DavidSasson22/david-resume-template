@@ -27,11 +27,14 @@
   set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.34em, marker: [•])
 
   let section-heading(title) = {
-    v(0.46em)
-    text(size: 12pt, weight: "bold", upper(title))
-    v(0em)
-    line(length: 100%, stroke: 0.65pt + rgb("444444"))
-    v(0.14em)
+    v(0.42em)
+    grid(
+      columns: (1fr,),
+      row-gutter: 0.18em,
+      text(size: 12pt, weight: "bold", upper(title)),
+      line(length: 100%, stroke: 0.6pt + rgb("444444")),
+    )
+    v(0.16em)
   }
 
   let contact-line(items) = {
@@ -44,11 +47,11 @@
     block(width: 100%)[
       #strong(entry.organization)
       #v(0.24em)
-      #text(size: 10.8pt, weight: "medium", entry.title)
+      #text(size: 10.8pt, entry.title)
       #if entry.location != none {
-        [ — #text(size: 10.2pt, fill: rgb("555555"), entry.location)]
+        [ — #text(size: 10.8pt, fill: rgb("555555"), entry.location)]
       }
-      | #entry.dates
+      #text(size: 10.8pt, fill: rgb("333333"))[ | #entry.dates]
     ]
     if entry.description != none {
       v(0.12em)
@@ -68,7 +71,7 @@
       #text(size: 10.8pt, weight: "medium", entry.credential)
       | #entry.dates
     ]
-    v(0.50em)
+    v(0.34em)
   }
 
   let render-custom(section) = {
@@ -96,7 +99,7 @@
       align: center,
       [#text(size: 21pt, weight: "bold", name)],
       [#text(size: 11.2pt, weight: "medium", fill: rgb("333333"), headline)],
-      [#text(size: 9.8pt, fill: rgb("444444"), contact-line(contact))],
+      [#text(size: 10pt, fill: rgb("444444"), contact-line(contact))],
     ))
   } else {
     align(center, grid(
@@ -104,7 +107,7 @@
       row-gutter: 0.68em,
       align: center,
       [#text(size: 21pt, weight: "bold", name)],
-      [#text(size: 9.8pt, fill: rgb("444444"), contact-line(contact))],
+      [#text(size: 10pt, fill: rgb("444444"), contact-line(contact))],
     ))
   }
 
