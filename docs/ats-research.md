@@ -4,7 +4,7 @@ Applicant-tracking systems are not one uniform parser, so the goal is robustness
 
 ## Safer document choices
 
-- Use standard headings such as Summary, Skills, Experience, and Education.
+- Use standard headings such as Summary, Technical Skills, Experience, and Education.
 - Keep the reading order linear.
 - Use real text rather than images of text.
 - Write complete organization names, job titles, dates, and locations.

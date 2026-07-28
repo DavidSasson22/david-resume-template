@@ -1,13 +1,15 @@
 # Generic example
 
-This is the canonical demonstration of the framework. It intentionally uses a fictional, profession-neutral experienced candidate rather than a software-engineering profile.
+This is the canonical demonstration of the framework. It intentionally uses a fictional senior software engineer whose content illustrates the evidence-based structure without representing a real person.
 
 It demonstrates:
 
 - a concise summary
-- categorized skills
+- categorized technical skills
 - reverse-chronological experience
-- measurable impact bullets
+- architecture, ownership, leadership, and measurable impact bullets
+- month-year dates for professional roles
+- selected engineering highlights before education
 - education
 - reusable optional sections
 - certifications, projects, languages, and community work
@@ -15,7 +17,7 @@ It demonstrates:
 Build it with:
 
 ```bash
-typst compile examples/generic/resume.typ examples/generic/resume.pdf
+typst compile --root . examples/generic/resume.typ examples/generic/resume.pdf
 ```
 
 Replace the fictional content rather than copying its claims or metrics. Remove any section that does not strengthen the application.

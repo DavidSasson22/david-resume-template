@@ -2,84 +2,91 @@
 
 #show: resume.with(
   name: "Jordan Lee",
-  headline: "Senior Operations & Program Leader",
+  headline: "Senior Software Engineer | Backend & Platform Systems",
   contact: (
-    "Metro City, Country",
+    "Tel Aviv, Israel",
+    link("tel:+972505550142")[+972 50 555 0142],
     link("mailto:jordan.lee@example.com")[jordan.lee\@example.com],
     link("https://linkedin.com/in/jordanlee")[linkedin.com/in/jordanlee],
+    link("https://github.com/jordanlee")[github.com/jordanlee],
   ),
   summary: [
-    Results-oriented professional with 10+ years of experience leading cross-functional programs, improving operating models, and delivering measurable customer and business outcomes. Known for translating ambiguous goals into clear plans, aligning stakeholders, and building repeatable processes that scale.
+    Senior software engineer with 11+ years building backend, platform, and cybersecurity products across cloud and distributed systems. Leads architecture from high-level design through delivery, translating product requirements into reliable services and data models. Known for cross-team technical direction, mentoring engineers, and improving performance, operational resilience, and delivery speed.
   ],
   skills: (
-    (label: "Program Leadership", items: ("Portfolio planning", "Roadmaps", "Risk management", "Executive reporting")),
-    (label: "Operations", items: ("Process improvement", "Capacity planning", "Vendor management", "Quality systems")),
-    (label: "Analysis", items: ("KPI design", "Forecasting", "Business cases", "Root-cause analysis")),
-    (label: "Tools", items: ("Microsoft Excel", "Power BI", "Jira", "Salesforce")),
+    (label: "Languages", items: ("TypeScript", "JavaScript", "SQL", "Python")),
+    (label: "Backend", items: ("Node.js", "NestJS", "REST APIs", "Kafka", "Microservices")),
+    (label: "Data", items: ("PostgreSQL", "ClickHouse", "Redis", "TypeORM", "Data modeling")),
+    (label: "Cloud & Infrastructure", items: ("AWS", "Docker", "Kubernetes", "CI/CD", "Observability")),
+    (label: "Architecture", items: ("Distributed systems", "Event-driven systems", "System design", "Cybersecurity products")),
   ),
   experience: (
     (
-      company: "Northstar Services",
-      role: "Senior Program Manager",
-      location: "Metro City",
-      dates: "2022–Present",
-      description: "Leads strategic programs spanning Operations, Product, Finance, and Customer Success.",
+      company: "Northstar Security",
+      role: "Senior Software Engineer",
+      location: "Tel Aviv, Israel",
+      dates: "Jul 2021–Present",
+      description: none,
       bullets: (
-        [Redesigned the annual planning process across six departments, reducing planning-cycle time by 30% and giving executives a single view of priorities, owners, and dependencies.],
-        [Established a portfolio health framework that surfaced delivery risks earlier and improved on-time completion from 74% to 91% within one year.],
-        [Led a customer onboarding improvement program that removed four handoffs, shortened time to value by 25%, and increased satisfaction scores.],
+        [Designed and led a backend-controlled configuration architecture for heterogeneous AI assets, enabling new asset types to reuse shared page and card infrastructure with minimal frontend changes.],
+        [Owned high-level design and delivery of an event-driven ingestion platform processing more than 40 million security events per day across Kafka, Node.js, PostgreSQL, and ClickHouse.],
+        [Redesigned query paths and data models for a high-volume investigation workflow, reducing p95 response time by 63% while preserving tenant isolation and auditability.],
+        [Coordinated delivery across backend, frontend, product, architecture, and UI/UX partners, turning ambiguous requirements into sequenced technical milestones for a strategic product launch.],
+        [Mentored six engineers through design reviews, onboarding, and incident follow-ups, establishing reusable patterns for observability, testing, and operational ownership.],
       ),
     ),
     (
-      company: "Example Group",
-      role: "Operations Manager",
-      location: "Metro City",
-      dates: "2017–2022",
+      company: "Example Cloud Systems",
+      role: "Software Engineer",
+      location: "Remote",
+      dates: "Jan 2017–Jun 2021",
       description: none,
       bullets: (
-        [Managed a multi-site operating function serving more than 200 internal users while maintaining service levels during rapid organizational growth.],
-        [Automated recurring reporting and introduced standard operating reviews, saving approximately 20 staff hours per month.],
-        [Negotiated supplier and workflow changes that reduced annual operating costs by 12% without reducing service quality.],
+        [Built multi-tenant backend services in TypeScript and NestJS that supported more than 200 enterprise customers and sustained 99.95% availability.],
+        [Led migration of synchronous workflows to event-driven processing, improving failure isolation and cutting peak request latency by 45%.],
+        [Introduced automated deployment checks, service-level dashboards, and structured incident reviews, reducing repeat production incidents by 30%.],
       ),
     ),
     (
-      company: "Sample Company",
-      role: "Business Analyst",
-      location: "Metro City",
-      dates: "2013–2017",
+      company: "Sample Digital",
+      role: "Full-Stack Developer",
+      location: "Haifa, Israel",
+      dates: "Jul 2013–Dec 2016",
       description: none,
       bullets: (
-        [Built performance dashboards and decision models used by department leaders to prioritize investments and staffing.],
-        [Mapped customer-support processes and identified changes that reduced avoidable escalations by 18%.],
+        [Delivered customer-facing web applications and Node.js APIs from discovery through production, with ownership spanning data modeling, testing, and deployment.],
+        [Created shared application components and engineering documentation that shortened onboarding and reduced duplicated implementation across three product teams.],
+      ),
+    ),
+  ),
+  featured_sections: (
+    (
+      title: "Selected Engineering Highlights",
+      kind: "bullets",
+      items: (
+        [Created an open-source TypeScript toolkit for validating event schemas and generating typed consumers, adopted by multiple engineering teams and used in production services.],
+        [Designed a reference architecture for secure AI-assisted workflows on AWS, covering model access, data boundaries, audit events, and failure handling.],
       ),
     ),
   ),
   education: (
-    (institution: "Example University", credential: "B.A. in Business Administration", dates: "2009–2013"),
+    (institution: "Example University", credential: "B.Sc. in Computer Science", dates: "2009–2013"),
   ),
   sections: (
     (
       title: "Certifications",
       kind: "labeled",
       items: (
-        (label: "Project Management", value: "Recognized professional certification, 2021"),
-        (label: "Process Improvement", value: "Advanced practitioner certification, 2019"),
-      ),
-    ),
-    (
-      title: "Selected Projects",
-      kind: "bullets",
-      items: (
-        [Created a reusable operating-review toolkit with templates for objectives, metrics, risks, decisions, and follow-up actions.],
-        [Volunteered as program lead for a local workforce-readiness initiative, coordinating 25 mentors and 80 participants.],
+        (label: "AWS", value: "Certified Solutions Architect – Associate, 2024"),
+        (label: "Security", value: "Cloud Security Professional Certification, 2023"),
       ),
     ),
     (
       title: "Additional Information",
       kind: "labeled",
       items: (
-        (label: "Languages", value: "English (native), Spanish (professional)"),
-        (label: "Community", value: "Volunteer mentor for early-career professionals"),
+        (label: "Languages", value: "Hebrew (native), English (professional)"),
+        (label: "Community", value: "Volunteer mentor for early-career software engineers"),
       ),
     ),
   ),

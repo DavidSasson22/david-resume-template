@@ -10,27 +10,28 @@
   skills: (),
   experience: (),
   education: (),
+  featured_sections: (),
   sections: (),
   body_font: "Arial",
-  page_size: "a4"
+  page_size: "us-letter"
 ) = {
   set document(title: name, author: name)
   set page(
     paper: page_size,
-    margin: (x: 18mm, y: 16mm),
+    margin: 18mm,
     header: none,
     footer: none,
   )
-  set text(font: body_font, size: 10.8pt, fill: rgb("181818"))
+  set text(font: body_font, size: 11pt, fill: rgb("181818"))
   set par(leading: 0.55em, justify: false)
   set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.34em, marker: [•])
 
   let section-heading(title) = {
-    v(0.8em)
+    v(0.46em)
     text(size: 12pt, weight: "bold", upper(title))
-    v(0.12em)
+    v(0em)
     line(length: 100%, stroke: 0.65pt + rgb("444444"))
-    v(0.33em)
+    v(0.14em)
   }
 
   let contact-line(items) = {
@@ -41,46 +42,33 @@
 
   let dated-entry(entry) = {
     block(width: 100%)[
-      #grid(
-        columns: (1fr, auto),
-        column-gutter: 8pt,
-        row-gutter: 0.44em,
-        align: (left, right),
-        [#strong(entry.organization)],
-        [#entry.dates],
-        [
-          #text(size: 10.2pt, weight: "medium", entry.title)
-          #if entry.location != none {
-            [ — #text(size: 9.8pt, fill: rgb("555555"), entry.location)]
-          }
-        ],
-        [],
-      )
+      #strong(entry.organization)
+      #v(0.24em)
+      #text(size: 10.8pt, weight: "medium", entry.title)
+      #if entry.location != none {
+        [ — #text(size: 10.2pt, fill: rgb("555555"), entry.location)]
+      }
+      | #entry.dates
     ]
     if entry.description != none {
       v(0.12em)
       emph(entry.description)
     }
     if entry.bullets.len() > 0 {
-      v(0.15em)
+      v(0.06em)
       list(..entry.bullets)
     }
-    v(0.42em)
+    v(0.34em)
   }
 
   let education-entry(entry) = {
     block(width: 100%)[
-      #grid(
-        columns: (1fr, auto),
-        column-gutter: 8pt,
-        row-gutter: 0.38em,
-        [#strong(entry.institution)],
-        [#entry.dates],
-        [#text(weight: "medium", entry.credential)],
-        [],
-      )
+      #strong(entry.institution)
+      #v(0.24em)
+      #text(size: 10.8pt, weight: "medium", entry.credential)
+      | #entry.dates
     ]
-    v(0.32em)
+    v(0.50em)
   }
 
   let render-custom(section) = {
@@ -104,7 +92,7 @@
   if headline != none {
     align(center, grid(
       columns: (auto,),
-      row-gutter: 0.52em,
+      row-gutter: 0.68em,
       align: center,
       [#text(size: 21pt, weight: "bold", name)],
       [#text(size: 11.2pt, weight: "medium", fill: rgb("333333"), headline)],
@@ -113,7 +101,7 @@
   } else {
     align(center, grid(
       columns: (auto,),
-      row-gutter: 0.52em,
+      row-gutter: 0.68em,
       align: center,
       [#text(size: 21pt, weight: "bold", name)],
       [#text(size: 9.8pt, fill: rgb("444444"), contact-line(contact))],
@@ -121,15 +109,15 @@
   }
 
   if summary != none {
-    v(0.30em)
+    v(0.20em)
     section-heading("Summary")
-    summary
+    text(size: 11pt, summary)
   }
 
   if skills.len() > 0 {
-    section-heading("Skills")
+    section-heading("Technical Skills")
     for group in skills {
-      [#strong(group.label): #group.items.join(", ")]
+      text(size: 11pt)[#strong(group.label): #group.items.join(", ")]
       linebreak()
     }
   }
@@ -146,6 +134,10 @@
         bullets: entry.bullets,
       ))
     }
+  }
+
+  for featured-section in featured_sections {
+    render-custom(featured-section)
   }
 
   if education.len() > 0 {

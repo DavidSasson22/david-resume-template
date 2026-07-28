@@ -6,7 +6,7 @@ David Resume Template v1 is based on evidence-backed constraints for senior soft
 
 ### Single column
 
-Single-column layout is the lowest-risk default for parsing and preserves an obvious reading order. The template uses a two-cell grid only within a job heading to place dates consistently; all substantive resume content remains in one logical column.
+Single-column layout is the lowest-risk default for parsing and preserves an obvious reading order. Job and education dates stay on the same left-aligned line as their role or credential so extraction order remains stable across PDF parsers.
 
 ### Standard headings
 
@@ -14,7 +14,7 @@ The template uses Summary, Technical Skills, Experience, Education, and Addition
 
 ### Typography
 
-- Body: 10.8 pt
+- Body: 11 pt
 - Section headings: 12 pt
 - Name: 21 pt
 - Three levels maximum
@@ -23,7 +23,7 @@ The supported range is more important than any exact number. Users should avoid 
 
 ### Margins
 
-The default 18 mm horizontal margin is approximately 0.71 inches, within the recommended 0.6–0.8 inch range.
+The default 18 mm margin is approximately 0.71 inches on every side, within the recommended 0.6–0.8 inch range.
 
 ### Content hierarchy
 

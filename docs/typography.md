@@ -4,10 +4,10 @@ Typography should reduce reading effort, not become the subject of the resume.
 
 ## Defaults
 
-- Body text: 10.8 pt
+- Body text: 11 pt
 - Section headings: 12 pt bold
 - Name: 21 pt bold
-- Margins: 18 mm horizontal, 16 mm vertical
+- Margins: 18 mm on all sides (approximately 0.7 inches)
 - Body font: Arial, with Aptos, Calibri, Helvetica, or Liberation Sans as practical alternatives
 
 ## Why these are defaults, not laws

@@ -8,12 +8,12 @@ Recommended default:
 
 1. Header and contact information
 2. Summary, when it adds positioning value
-3. Skills or core competencies
+3. Technical Skills or core competencies
 4. Experience
 5. Education
 6. Relevant optional sections
 
-For many experienced candidates, Experience can appear before Skills when recent accomplishments are the strongest evidence.
+For many experienced candidates, Experience can appear before Technical Skills when recent accomplishments are the strongest evidence.
 
 ## Early-career candidates
 

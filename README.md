@@ -11,9 +11,9 @@ This repository documents not only how to build a resume, but why the framework 
 ## Design principles
 
 - Single-column, reverse-chronological structure
-- A4 by default; US Letter supported
-- 10.8 pt body text and restrained hierarchy
-- 18 mm horizontal and 16 mm vertical margins
+- US Letter by default; A4 supported
+- 11 pt body text and restrained hierarchy
+- 18 mm margins (approximately 0.7 inches)
 - Standard, explicit section names
 - Contact information in the document body
 - Selectable-text PDF output
@@ -25,7 +25,7 @@ This repository documents not only how to build a resume, but why the framework 
 Install [Typst](https://typst.app/docs/), then run:
 
 ```bash
-typst compile examples/generic/resume.typ examples/generic/resume.pdf
+typst compile --root . examples/generic/resume.typ examples/generic/resume.pdf
 ```
 
 Edit `examples/generic/resume.typ`. The reusable framework lives in `template/resume.typ`.
@@ -34,9 +34,17 @@ Edit `examples/generic/resume.typ`. The reusable framework lives in `template/re
 
 ## Canonical example
 
-The repository contains one profession-neutral fictional example at [`examples/generic`](examples/generic). It demonstrates summaries, categorized skills, reverse-chronological experience, measurable bullets, education, certifications, projects, languages, and community work.
+The repository contains one fictional senior-software-engineering example at [`examples/generic`](examples/generic). It demonstrates a positioning summary, categorized technical skills, reverse-chronological experience, architecture and leadership evidence, measurable bullets, engineering highlights, education, certifications, languages, and community work.
 
 The figures are fictional. Replace them with truthful evidence rather than copying claims.
+
+## Preview
+
+[Download the generated example PDF](examples/generic/resume.pdf).
+
+![Generic resume example, page 1](docs/assets/generic-resume-page-1.png)
+
+![Generic resume example, page 2](docs/assets/generic-resume-page-2.png)
 
 ## Optional sections
 
@@ -49,9 +57,11 @@ The `sections` parameter supports:
 
 Include only sections that improve fit for the target role.
 
-## Use US Letter
+Use `featured_sections` for strong Projects, Open Source, Publications, or Architecture Highlights that should appear before Education. Use `sections` for Education-following material such as Certifications, Languages, or additional details.
 
-Pass `page-size: "us-letter"` to `resume.with(...)`.
+## Use A4
+
+Pass `page_size: "a4"` to `resume.with(...)`.
 
 ## Documentation
 
