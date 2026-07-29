@@ -12,7 +12,7 @@
     link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
   ),
   summary: [
-    Backend-focused full-stack and platform engineer with five years of experience building cybersecurity products across AI security, cloud security, and third-party risk. Experienced in taking loosely defined product requirements from system design through production, while building shared infrastructure that helps other engineers deliver new capabilities faster.
+    Backend-focused full-stack and platform engineer with five years of experience building cybersecurity products across AI security, cloud security, and third-party risk. Takes evolving product requirements from system design through production and creates shared infrastructure that helps other engineers ship new capabilities faster.
   ],
   skills: (
     (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React")),
