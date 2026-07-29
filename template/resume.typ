@@ -13,7 +13,8 @@
   featured_sections: (),
   sections: (),
   body_font: "Arial",
-  page_size: "us-letter"
+  page_size: "us-letter",
+  list_spacing: 0.34em,
 ) = {
   set document(title: name, author: name)
   set page(
@@ -24,7 +25,7 @@
   )
   set text(font: body_font, size: 11pt, fill: rgb("181818"))
   set par(leading: 0.55em, justify: false)
-  set list(indent: 1.15em, body-indent: 0.42em, spacing: 0.34em, marker: [•])
+  set list(indent: 1.15em, body-indent: 0.42em, spacing: list_spacing, marker: [•])
 
   let section-heading(title) = {
     v(0.42em)
