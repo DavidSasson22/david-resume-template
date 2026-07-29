@@ -34,17 +34,15 @@ Edit `examples/generic/resume.typ`. The reusable framework lives in `template/re
 
 ## Canonical example
 
-The repository contains one fictional senior-software-engineering example at [`examples/generic`](examples/generic). It demonstrates a positioning summary, categorized technical skills, reverse-chronological experience, architecture and leadership evidence, measurable bullets, engineering highlights, education, certifications, languages, and community work.
+The repository includes a real-world, one-page backend-focused full-stack resume at [`examples/david`](examples/david). It demonstrates concise positioning, categorized technical skills, reverse-chronological experience, reusable infrastructure work, production ownership, cross-functional collaboration, and compact education.
 
-The figures are fictional. Replace them with truthful evidence rather than copying claims.
+The fictional, feature-rich example at [`examples/generic`](examples/generic) remains available for exploring optional sections such as engineering highlights, certifications, languages, and community work. In either example, replace personal details and claims with your own truthful evidence.
 
 ## Preview
 
-[Download the generated example PDF](examples/generic/resume.pdf).
+[Download David Sasson's generated resume PDF](examples/david/resume.pdf).
 
-![Generic resume example, page 1](docs/assets/generic-resume-page-1.png)
-
-![Generic resume example, page 2](docs/assets/generic-resume-page-2.png)
+![David Sasson resume example](docs/assets/david-resume-page-1.png)
 
 ## Optional sections
 
