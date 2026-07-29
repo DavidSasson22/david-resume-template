@@ -50,7 +50,7 @@
       #v(0.24em)
       #text(size: 10.8pt, entry.title)
       #if entry.location != none {
-        [ - #text(size: 10.8pt, fill: rgb("555555"), entry.location)]
+        [#text("- ")#text(size: 10.8pt, fill: rgb("555555"), entry.location)]
       }
       #text(size: 10.8pt, fill: rgb("333333"))[ | #entry.dates]
     ]

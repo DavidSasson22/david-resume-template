@@ -28,7 +28,7 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Owned full-stack delivery for AI Assets for seven months, partnering across Backend, Product, QA, and Design to build product pages and reusable foundations based on a polymorphic domain model as the product grew into a standalone group.],
+        [For seven months, owned full-stack delivery for AI Assets, partnering across Backend, Product, QA, and Design to build product pages and reusable foundations based on a polymorphic domain model as the product grew into a standalone group.],
         [Built an AI Assets SDK used across backend services and the BFF to model relationships among agents, knowledge bases, capabilities, and resources.],
         [Shipped Scan Windows and Scan Control across schema, APIs, evaluation logic, and UI; its SDK lets backend services evaluate datastore pause rules in bulk and across time ranges.],
         [Resolved high-impact on-call incidents across the platform, including tracing a production OOM to database query fan-out and restoring baseline latency.],
