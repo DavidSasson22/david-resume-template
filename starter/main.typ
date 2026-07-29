@@ -1,48 +1,49 @@
 #import "@preview/signal-resume:0.1.0": resume
 
-// Replace the fictional content below with truthful evidence from your career.
 #show: resume.with(
-  name: "Alex Morgan",
+  name: "David Sasson",
+  body_font: "Arial",
   headline: "Backend-Focused Full-Stack & Platform Engineer",
-  list_spacing: 0.90em,
+  list_spacing: 0.45em,
   contact: (
-    "City, Country",
-    link("tel:+15550100")[+1 555 0100],
-    link("mailto:alex.morgan@example.com")[alex.morgan\@example.com],
-    link("https://www.linkedin.com/in/alex-morgan")[linkedin.com/in/alex-morgan],
+    "Jerusalem, Israel",
+    link("tel:+972522626684")[+972 52 262 6684],
+    link("mailto:davids2289@gmail.com")[davids2289\@gmail.com],
+    link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
   ),
   summary: [
-    Backend-focused full-stack engineer with a track record of turning ambiguous product requirements into reliable systems, reusable infrastructure, and foundations that help teams deliver faster.
+    Backend-focused full-stack and platform engineer with five years building cybersecurity products across AI security, cloud security, and third-party risk. Turns ambiguity into scalable production systems and reusable foundations, with end-to-end ownership and strong production judgment.
   ],
   skills: (
-    (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "React")),
-    (label: "Backend", items: ("REST APIs", "Microservices", "Event-driven systems", "SDK development")),
-    (label: "Data", items: ("PostgreSQL", "Redis", "Data modeling")),
+    (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React")),
+    (label: "Backend", items: ("REST APIs", "Microservices", "Kafka", "RabbitMQ", "Mongoose", "SDK development")),
+    (label: "Data", items: ("PostgreSQL", "MongoDB", "Redis", "TypeORM", "Data modeling")),
     (label: "Engineering", items: ("System design", "Platform engineering", "Performance optimization", "Testing")),
   ),
   experience: (
     (
-      company: "Northstar Security",
+      company: "Cyera — AI and Data Security",
       role: "Software Engineer",
-      location: "Remote",
-      dates: "Jun 2023–Present",
+      location: "Tel Aviv, Israel",
+      dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Delivered a new security product from early requirements through production in partnership with backend, product, QA, and design peers.],
-        [Built reusable backend and frontend foundations that supported multiple product workflows without one-off implementations.],
-        [Resolved high-impact on-call incidents by tracing failures across services, data access, and production infrastructure.],
-        [Created shared SDKs and developer tooling that helped other engineering teams adopt platform capabilities consistently.],
+        [Served for seven months as AI Assets' only full-stack engineer, partnering with backend, Product, QA, and Design to build product pages and shared foundations for heterogeneous AI asset types as the product grew into a standalone group.],
+        [Built an AI Assets SDK adopted by backend teams to model relationships among agents, knowledge bases, capabilities, and resources, with an orchestration layer exposing UI-ready data.],
+        [Shipped Scan Windows and Scan Control across schema, APIs, evaluation logic, and UI; its SDK lets backend services evaluate datastore pause rules in bulk and across time ranges.],
+        [Resolved high-impact on-call incidents across the platform, including tracing a production OOM to database query fan-out and restoring baseline latency.],
+        [Created shared Claude Code skills and platform recipes adopted by engineers to implement cross-stack filters consistently with minimal setup.],
       ),
     ),
     (
-      company: "Atlas Cloud",
+      company: "Panorays — Third-Party Cyber Risk",
       role: "Full-Stack Developer",
-      location: "City, Country",
-      dates: "Jan 2020–May 2023",
+      location: "Tel Aviv, Israel",
+      dates: "Oct 2021–May 2025",
       description: none,
       bullets: (
-        [Built data integrations, APIs, and customer-facing workflows for a growing cloud platform.],
-        [Improved shared data models and UI patterns, reducing duplicated implementation across product teams.],
+        [Built data integrations and full-stack product flows on a platform team while improving server performance and data models.],
+        [Joined a newly formed cyber-posture assessment team as its first developer, owning core features including a risk policy tool and workflow automation.],
       ),
     ),
   ),
@@ -53,7 +54,14 @@
       title: "Education",
       kind: "labeled",
       items: (
-        (label: "Example University", value: "B.Sc., Computer Science, 2016–2020"),
+        (
+          label: "Freie Universität Berlin",
+          value: [M.A., Near & Middle Eastern Studies, 2016–2018 | 94/100; full scholarship, _Intellectual Encounters of the Islamicate World_],
+        ),
+        (
+          label: "Ben-Gurion University",
+          value: "Combined B.A., Psychology & Near and Middle Eastern Studies, 2013–2016 | 90/100; Departmental Excellence Program",
+        ),
       ),
     ),
   ),
