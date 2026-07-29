@@ -68,7 +68,7 @@ The fictional, feature-rich example at [`examples/generic`](examples/generic) re
 
 ## Preview
 
-[Download David Sasson's generated resume PDF](examples/david/resume.pdf).
+[Download David Sasson's regenerated resume PDF](examples/david/resume.pdf).
 
 ![David Sasson resume example](docs/assets/david-resume-page-1.png)
 
