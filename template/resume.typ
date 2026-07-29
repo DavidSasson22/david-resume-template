@@ -1,4 +1,4 @@
-// David Resume Template v1
+// Signal Resume
 // ATS-first, single-column Typst resume framework.
 
 #let resume(
@@ -12,7 +12,7 @@
   education: (),
   featured_sections: (),
   sections: (),
-  body_font: "Arial",
+  body_font: "New Computer Modern",
   page_size: "us-letter",
   list_spacing: 0.34em,
 ) = {

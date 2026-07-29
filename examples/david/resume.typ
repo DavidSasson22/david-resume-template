@@ -2,6 +2,7 @@
 
 #show: resume.with(
   name: "David Sasson",
+  body_font: "Arial",
   headline: "Backend-Focused Full-Stack & Platform Engineer",
   list_spacing: 0.90em,
   contact: (

@@ -1,3 +1,4 @@
 *.pdf
 !examples/generic/resume.pdf
+!examples/david/resume.pdf
 .DS_Store

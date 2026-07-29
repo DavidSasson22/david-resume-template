@@ -1,6 +1,6 @@
-# David Resume Template v1
+# Signal Resume
 
-An open-source, evidence-informed, ATS-first resume framework for experienced professionals.
+An open-source, evidence-informed, ATS-first Typst resume framework for experienced professionals.
 
 It prioritizes reliable parsing, rapid human scanning, evidence-dense accomplishments, and maintainability. It deliberately avoids sidebars, icons, skill bars, profile photos, charts, and decorative graphics.
 
@@ -22,13 +22,41 @@ This repository documents not only how to build a resume, but why the framework 
 
 ## Quick start
 
-Install [Typst](https://typst.app/docs/), then run:
+After the initial Typst Universe release, install [Typst](https://typst.app/docs/) and create a new resume project:
+
+```bash
+typst init @preview/signal-resume:0.1.0 my-resume
+cd my-resume
+typst compile main.typ resume.pdf
+```
+
+Edit `main.typ` with your own experience and evidence.
+
+You can also import the framework into an existing Typst project:
+
+```typst
+#import "@preview/signal-resume:0.1.0": resume
+```
+
+The public `resume` function is exported from `lib.typ`; its implementation lives in `template/resume.typ`.
+
+The package defaults to New Computer Modern because it is bundled with Typst and renders consistently across platforms. Pass `body_font: "Your Font"` to use another installed or project-provided family.
+
+## Develop from source
+
+Clone the repository and run the package checks:
+
+```bash
+git clone https://github.com/DavidSasson22/david-resume-template.git
+cd david-resume-template
+TYPST_BIN=typst ./scripts/check-package.sh
+```
+
+To work directly from the feature-rich fictional example:
 
 ```bash
 typst compile --root . examples/generic/resume.typ examples/generic/resume.pdf
 ```
-
-Edit `examples/generic/resume.typ`. The reusable framework lives in `template/resume.typ`.
 
 > **Typst compatibility note:** `context` is a reserved Typst keyword and cannot be used as a dictionary field name. This framework uses `description` for optional role or entry context.
 
