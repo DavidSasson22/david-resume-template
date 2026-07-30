@@ -15,6 +15,7 @@
   body_font: "New Computer Modern",
   page_size: "us-letter",
   list_spacing: 0.34em,
+  entry_header_spacing: 0.24em,
 ) = {
   set document(title: name, author: name)
   set page(
@@ -47,7 +48,7 @@
   let dated-entry(entry) = {
     block(width: 100%)[
       #strong(entry.organization)
-      #v(0.24em)
+      #v(entry_header_spacing)
       #text(size: 10.8pt, entry.title)
       #if entry.location != none {
         [#text("- ")#text(size: 10.8pt, fill: rgb("555555"), entry.location)]

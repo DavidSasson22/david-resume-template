@@ -3,21 +3,22 @@
 #show: resume.with(
   name: "David Sasson",
   body_font: "Arial",
-  headline: "Backend & Platform Engineer",
+  headline: "Full-Stack Software Engineer",
   list_spacing: 0.8em,
+  entry_header_spacing: 0em,
   contact: (
     link("tel:+972522626684")[+972 52 262 6684],
     link("mailto:davids2289@gmail.com")[davids2289\@gmail.com],
     link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
   ),
   summary: [
-    Software engineer with five years of experience building AI security, cloud security, and third-party risk products. Resolves performance bottlenecks, designs reusable platform architecture, and takes complex systems from design through production.
+    Full-stack software engineer with five years of experience building AI security, data security, and third-party risk products. Delivers end-to-end features spanning data models, backend-for-frontend APIs, business logic, and user interfaces.
   ],
   skills: (
-    (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React")),
+    (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React", "Jest")),
     (label: "Backend", items: ("REST APIs", "Microservices", "Kafka", "RabbitMQ", "SDK development")),
     (label: "Data", items: ("PostgreSQL", "MongoDB", "Redis", "TypeORM", "Mongoose", "Data modeling")),
-    (label: "Engineering", items: ("System design", "Platform engineering", "Performance optimization", "Testing")),
+    (label: "Engineering", items: ("System design", "BFF architecture", "Database schema design", "Query optimization")),
   ),
   experience: (
     (
@@ -27,9 +28,10 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Owned end-to-end delivery of AI Assets from inception, building its catalog, polymorphic asset-detail page, and AI Security dashboard in partnership with Backend, Product, QA, and Design.],
-        [Built a polymorphic asset model and dispatcher-driven tabs and cards on shared layout infrastructure, cutting new asset additions from days to hours and enabling backend engineers to ship UI changes independently.],
-        [Reduced worst-case latency on a core page from approximately 5 seconds to 0.5 seconds through query optimization, improving performance across tenants.],
+        [Owned technical delivery of the AI Assets product from concept through standalone launch, including its asset catalog, polymorphic detail page, and security dashboard, in collaboration with backend engineering, product, QA, and design.],
+        [Built a polymorphic asset model and dispatcher-driven shared layouts, reducing the time to add new asset types from days to hours and allowing backend engineers to ship UI changes without frontend support.],
+        [Built the graph orchestration layer for relationships among AI agents, knowledge bases, and capabilities, defining the BFF response and shaping the backend persistence schema to enable users to visualize asset connections.],
+        [Reduced latency for large customers on a core platform page by up to 90%, from 5 seconds to 0.5 seconds, through query optimization.],
       ),
     ),
     (
@@ -39,9 +41,8 @@
       dates: "Oct 2021–May 2025",
       description: none,
       bullets: (
-        [Cut a data-retrieval job spanning all customers from 11–12 minutes to 1.5 minutes by replacing batched API calls with one purpose-built endpoint, reducing database load and eliminating consumer-side aggregation and deduplication.],
-        [Built a configurable risk-policy system used by more than 50% of customers to override default risk calculations, spanning data models, calculation logic, and complex UI.],
-        [Built rules-driven security workflows that triggered emails and task assignments when customer-defined conditions were met.],
+        [Cut runtime for a data-retrieval job across all customers from 11–12 minutes to 1.5 minutes by replacing batched API calls with a purpose-built endpoint, reducing database load and eliminating consumer-side aggregation and deduplication.],
+        [Built a configurable risk-policy system adopted by more than 50% of customers, spanning data models, calculation logic, and a policy-management UI.],
       ),
     ),
   ),
