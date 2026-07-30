@@ -28,7 +28,7 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Owned end-to-end delivery of AI Assets from inception, building the AI Assets catalog, polymorphic asset-detail, and AI Security dashboard pages with a backend team, Product, QA, and Design.],
+        [Owned end-to-end delivery of AI Assets from inception, building its catalog, polymorphic asset-detail page, and AI Security dashboard in partnership with Backend, Product, QA, and Design.],
         [Built a polymorphic asset model and dispatcher-driven tabs and cards on shared layout infrastructure, cutting new asset additions from days to hours and enabling backend engineers to ship UI changes independently.],
         [Reduced worst-case latency on a core page from approximately 5 seconds to 0.5 seconds through query optimization, improving performance across tenants.],
       ),
@@ -58,12 +58,12 @@
         [
           #strong[Freie Universität Berlin]
           #linebreak()
-          #text(size: 10pt)[M.A., Near & Middle Eastern Studies, 2016–2018 | 94/100; full scholarship]
+          #text(size: 10pt)[M.A., Near and Middle Eastern Studies, 2016–2018 | 94/100; full scholarship]
         ],
         [
           #strong[Ben-Gurion University]
           #linebreak()
-          #text(size: 10pt)[Combined B.A., Psychology & Near/Middle Eastern Studies, 2013–2016 | 90/100; Departmental Excellence]
+          #text(size: 10pt)[Combined B.A., Psychology & Near and Middle Eastern Studies, 2013–2016 | 90/100; Departmental Excellence]
         ],
       ),
     ),
