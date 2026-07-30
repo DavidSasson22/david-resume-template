@@ -3,8 +3,8 @@
 #show: resume.with(
   name: "David Sasson",
   body_font: "Arial",
-  headline: "Backend-Focused Full-Stack & Platform Engineer",
-  list_spacing: 0.6em,
+  headline: "Backend-Oriented Full-Stack Engineer",
+  list_spacing: 0.8em,
   contact: (
     "Jerusalem, Israel",
     link("tel:+972522626684")[+972 52 262 6684],
@@ -12,7 +12,7 @@
     link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
   ),
   summary: [
-    Backend-focused full-stack and platform engineer with five years of experience building cybersecurity products across AI security, cloud security, and third-party risk. Takes evolving product requirements from system design through production and creates shared infrastructure that helps other engineers ship new capabilities faster.
+    Software engineer with five years of experience building cybersecurity products across AI security, cloud security, and third-party risk. Takes evolving product requirements from system design through production and creates shared infrastructure that helps other engineers ship new capabilities faster.
   ],
   skills: (
     (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React")),
@@ -28,22 +28,23 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [For seven months, owned full-stack delivery for AI Assets, partnering across Backend, Product, QA, and Design to build product pages and reusable foundations based on a polymorphic domain model as the product grew into a standalone group.],
-        [Built an AI Assets SDK used across backend services and the BFF to model relationships among agents, knowledge bases, capabilities, and resources.],
-        [Shipped Scan Windows and Scan Control across schema, APIs, evaluation logic, and UI; its SDK lets backend services evaluate datastore pause rules in bulk and across time ranges.],
-        [Resolved high-impact on-call incidents across the platform, including tracing a production OOM to database query fan-out and restoring baseline latency.],
-        [Created shared Claude Code skills and platform recipes adopted by engineers to implement cross-stack filters consistently with minimal setup.],
+        [Owned full-stack delivery for AI Assets from its early stages, partnering across Backend, Product, QA, and Design as the initiative grew into a standalone product.],
+        [Built performant backend solutions for customer queries spanning millions of rows across multiple tables, balancing runtime efficiency with fast product development.],
+        [Designed a reusable, polymorphic AI Assets SDK used across backend services and the BFF.],
+        [Built reusable developer tooling adopted across the team, accelerating cross-stack implementation while improving consistency.],
       ),
     ),
     (
-      company: "Panorays - Third-Party Cyber Risk",
+      company: "Panorays - Third-Party Cyber Risk Management",
       role: "Full-Stack Developer",
       location: "Tel Aviv, Israel",
       dates: "Oct 2021–May 2025",
       description: none,
       bullets: (
-        [Built data integrations and full-stack product flows on a platform team while improving server performance and data models.],
-        [Joined a newly formed cyber-posture assessment team as its first developer, owning core features including a risk policy tool and workflow automation.],
+        [Spent two years on a platform team, building data integrations and shared services while optimizing data-intensive backend operations.],
+        [Joined a newly established cyber-posture assessment team as its first developer, onboarding two engineers and collaborating closely with the core engine team.],
+        [Owned end-to-end delivery of configurable, rules-driven product systems spanning data models, calculation logic, and complex user interfaces.],
+        [Contributed to a cross-team MUI component library adopted as the standard for new UI development, improving consistency and reuse across the product.],
       ),
     ),
   ),
