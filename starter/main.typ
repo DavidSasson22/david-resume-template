@@ -12,7 +12,7 @@
     link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
   ),
   summary: [
-    Full-stack software engineer with five years of experience building AI security, data security, and third-party risk products. Delivers end-to-end features spanning data models, backend-for-frontend APIs, business logic, and user interfaces.
+    Full-stack software engineer with five years of experience building AI security, data security, and third-party risk products. Designs reusable architecture and delivers end-to-end features across data models, backend-for-frontend APIs, business logic, and user interfaces.
   ],
   skills: (
     (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React", "Jest")),
