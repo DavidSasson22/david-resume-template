@@ -17,8 +17,8 @@
   skills: (
     (label: "Languages & Frameworks", items: ("TypeScript", "JavaScript", "Node.js", "NestJS", "React", "Jest")),
     (label: "Backend", items: ("REST APIs", "Microservices", "Kafka", "RabbitMQ", "SDK development")),
-    (label: "Data", items: ("PostgreSQL", "MongoDB", "Redis", "TypeORM", "Mongoose", "Data modeling")),
-    (label: "Engineering", items: ("System design", "BFF architecture", "Database schema design", "Query optimization")),
+    (label: "Data", items: ("PostgreSQL", "MongoDB", "Redis", "TypeORM", "Mongoose")),
+    (label: "Engineering", items: ("System design", "BFF architecture", "Data modeling", "Query optimization")),
   ),
   experience: (
     (
@@ -28,10 +28,10 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Owned technical delivery of the AI Assets product from concept through standalone launch, including its asset catalog, polymorphic detail page, and security dashboard, in collaboration with backend engineering, product, QA, and design.],
+        [Owned technical delivery of AI Assets from concept through standalone launch, including its asset catalog, polymorphic detail page, and security dashboard, with backend engineering, product, QA, and design.],
         [Built a polymorphic asset model and dispatcher-driven shared layouts, reducing the time to add new asset types from days to hours and allowing backend engineers to ship UI changes without frontend support.],
-        [Built the graph orchestration layer for relationships among AI agents, knowledge bases, and capabilities, defining the BFF response and shaping the backend persistence schema to enable users to visualize asset connections.],
-        [Reduced latency for large customers on a core platform page by up to 90%, from 5 seconds to 0.5 seconds, through query optimization.],
+        [Built a graph orchestration layer that modeled relationships among AI agents, knowledge bases, and capabilities, defining the BFF response and shaping the persistence schema used to visualize asset connections.],
+        [Reduced latency on a core platform page for large customers by 90%, from 5 seconds to 0.5 seconds, through query optimization.],
       ),
     ),
     (
