@@ -6,7 +6,6 @@
   headline: "Backend & Platform Engineer",
   list_spacing: 0.8em,
   contact: (
-    "Jerusalem, Israel",
     link("tel:+972522626684")[+972 52 262 6684],
     link("mailto:davids2289@gmail.com")[davids2289\@gmail.com],
     link("https://www.linkedin.com/in/david-sasson-developer/")[linkedin.com/in/david-sasson-developer],
