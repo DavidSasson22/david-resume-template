@@ -28,10 +28,9 @@
       dates: "Jun 2025–Present",
       description: none,
       bullets: (
-        [Owned end-to-end delivery of AI Assets from inception, building the AI Assets catalog page, polymorphic asset-details page, and AI Security dashboard page in partnership with a backend team, Product, QA, and Design.],
-        [Designed AI Assets' polymorphic family-and-instance model and extended shared layout infrastructure with dispatcher-driven tabs and cards, cutting new asset additions from days to hours and enabling backend engineers to complete UI integrations independently.],
-        [Cut worst-case query latency for large customers from approximately 5 seconds to 0.5 seconds while improving performance across all tenants by moving heavy aggregation from the server into the database.],
-        [Resolved production OOMs and elevated latency by eliminating Cartesian fan-out in a many-to-many database query, restoring baseline response times and improving performance across tenants.],
+        [Owned end-to-end delivery of AI Assets from inception, building the AI Assets catalog, polymorphic asset-detail, and AI Security dashboard pages with a backend team, Product, QA, and Design.],
+        [Built a polymorphic asset model and dispatcher-driven tabs and cards on shared layout infrastructure, cutting new asset additions from days to hours and enabling backend engineers to ship UI changes independently.],
+        [Reduced worst-case latency on a core page from approximately 5 seconds to 0.5 seconds through query optimization, improving performance across tenants.],
       ),
     ),
     (
@@ -41,24 +40,32 @@
       dates: "Oct 2021–May 2025",
       description: none,
       bullets: (
-        [Cut a backend data-retrieval job spanning all customers from 11–12 minutes to 1.5 minutes by replacing repeated batched API calls with a single purpose-built endpoint, reducing database load and removing consumer-side aggregation and deduplication.],
-        [Built a configurable risk-policy system used by more than 50% of customers to override default risk calculations, owning its data models, calculation logic, and complex UI end to end.],
-        [Built rules-driven workflow automation that triggered emails and task assignments when customer-defined security conditions were met.],
+        [Cut a data-retrieval job spanning all customers from 11–12 minutes to 1.5 minutes by replacing batched API calls with one purpose-built endpoint, reducing database load and eliminating consumer-side aggregation and deduplication.],
+        [Built a configurable risk-policy system used by more than 50% of customers to override default risk calculations, spanning data models, calculation logic, and complex UI.],
+        [Built rules-driven security workflows that triggered emails and task assignments when customer-defined conditions were met.],
       ),
     ),
   ),
   featured_sections: (),
-  education: (
+  education: (),
+  sections: (
     (
-      institution: "Freie Universität Berlin",
-      credential: [M.A., Near & Middle Eastern Studies; 94/100; full scholarship, _Intellectual Encounters of the Islamicate World_],
-      dates: "2016–2018",
-    ),
-    (
-      institution: "Ben-Gurion University",
-      credential: "Combined B.A., Psychology & Near and Middle Eastern Studies; 90/100; Departmental Excellence Program",
-      dates: "2013–2016",
+      title: "Education",
+      kind: "custom",
+      content: grid(
+        columns: (1fr,),
+        row-gutter: 0.72em,
+        [
+          #strong[Freie Universität Berlin]
+          #linebreak()
+          #text(size: 10pt)[M.A., Near & Middle Eastern Studies, 2016–2018 | 94/100; full scholarship]
+        ],
+        [
+          #strong[Ben-Gurion University]
+          #linebreak()
+          #text(size: 10pt)[Combined B.A., Psychology & Near/Middle Eastern Studies, 2013–2016 | 90/100; Departmental Excellence]
+        ],
+      ),
     ),
   ),
-  sections: (),
 )
